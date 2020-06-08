@@ -8,7 +8,7 @@ import northernImg from './aurora-1185464_1920.jpg';
 function App() {
   return (
     <div>
-      <Task1 name="Arshia"/>
+      <Task1 name="Arshia Saleem"/>
       <MediaCard title="Northern Lights" body="This image of Northern Lights
        is captured in Norway" imageUrl={northernImg}/>
       <Gate isOpen = {true}/>
