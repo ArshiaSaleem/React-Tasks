@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Task1 from './Task1.js'
+import MediaCard from './MediaCard.js'
+import Gate from './Gate.js'
+import northernImg from './aurora-1185464_1920.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Task1 name="Arshia"/>
+      <MediaCard title="Northern Lights" body="This image of Northern Lights
+       is captured in Norway" imageUrl={northernImg}/>
+      <Gate isOpen = {true}/>
     </div>
-  );
+  )
 }
 
 export default App;
